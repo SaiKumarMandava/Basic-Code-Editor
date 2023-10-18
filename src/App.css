@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+
+.code-editor {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.code-editor__button{
+  padding: 10px 15px;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  background-color: blue;
+  color: aliceblue;
+  font-weight: bold;
+}
+.code-editor__button0{
+  padding: 10px 15px;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  color: aliceblue;
+  font-weight: bold;
+}
+.code-editor__button1{
+  padding: 10px 15px;
+  border-radius: 5px 5px 5px 5px;
+  border:none;
+  color: aliceblue;
+  font-weight: bold;
+  background-color: black;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+textarea {
+  width: 100%;
+  height: 500px;
+  resize: none;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+
+/*landscape*/
+@media (max-width: 1024px) {
+  .code-editor {
+    padding: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*tablets*/
+@media (max-width: 768px) {
+  .code-editor {
+    max-width: 90%;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  textarea {
+    height: 150px;
+  }
+}
+
+/*smart phones*/
+@media (max-width: 480px) {
+  .code-editor {
+    padding: 5px;
+  }
+  textarea {
+    height: 100px;
   }
 }
