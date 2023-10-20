@@ -37,7 +37,10 @@ textarea {
   resize: none;
   outline: none;
 }
-
+.code-editor__textarea{
+  background-color: black;
+  color: white;
+}
 
 
 
