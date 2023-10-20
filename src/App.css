@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color:cadetblue
+
 }
 .code-editor__button{
   padding: 10px 15px;
